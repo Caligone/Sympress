@@ -2,9 +2,11 @@ extends layout
 
 block content
 
-  a#next(href="#") Next
-  br
-  a#prev(href="#") Prev
+  div#prevDiv.col-md-6
+    a#prev.btn.btn-primary.btn-lg(href="#") Prev
+
+  div#nextDiv.col-md-6
+    a#next.btn.btn-primary.btn-lg(href="#") Next
 
   script(src="/socket.io/socket.io.js")
   script(src='javascripts/server.js')
